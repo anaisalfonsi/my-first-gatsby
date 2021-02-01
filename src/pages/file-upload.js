@@ -46,7 +46,8 @@ export default class Contact extends React.Component {
         <h1 className="text-black">File Upload</h1>
         <form
           name="file-upload"
-          method="post"
+          method="POST"
+          subject="anais.mailtest@gmail.com"
           action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"

@@ -39,6 +39,7 @@ export default class Contact extends React.Component {
         <form
           name="Contact Form"
           method="POST"
+          subject="anais.mailtest@gmail.com"
           data-netlify="true"
           action="/thanks/"
           data-netlify-honeypot="bot-field"
@@ -47,11 +48,11 @@ export default class Contact extends React.Component {
           <input type="hidden" name="form-name" value="Contact Form" />
           <div>
             <label>Your Email:</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" onChange={this.handleChange} />
           </div>
           <div>
             <label>Message:</label>
-            <textarea name="message" />
+            <textarea name="message" onChange={this.handleChange} />
           </div>
           <button type="submit">Send</button>
         </form>
